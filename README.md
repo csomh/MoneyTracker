@@ -11,6 +11,11 @@ Code Example
 is some code example:
 ```c++
 <<<<<<< HEAD
+
+#include <iostream>
+
+=======
+<<<<<<< HEAD
 #include <iostream>
 =======
 <<<<<<< HEAD
