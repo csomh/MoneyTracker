@@ -3,8 +3,11 @@
 Code Example
 ============
 
-This is some code example:
+is some code example:
 ```c++
+
+#include <iostream>
+
 int main(int argc, char* argv[])
 {
 	return 0;
