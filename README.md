@@ -1,2 +1,10 @@
 # MoneyTracker
-<!-- Project for Money Tracke -->
+
+Code Example
+============
+
+This is some code example:
+`int main(int argc, char* argv[])
+{
+	return 0;
+}`
