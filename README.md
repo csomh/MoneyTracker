@@ -2,7 +2,16 @@
 
 Code Example
 ============
+<<<<<<< HEAD
+is some code example:
+=======
 
+<<<<<<< HEAD
+ is some code example:
+>>>>>>> 9bebdd546d2895cda9043e579b556bc148ec02ed
+```c++
+#include <iostream>
+=======
 is some code example:
 ```c++
 <<<<<<< HEAD
@@ -20,6 +29,7 @@ is some code example:
 =======
 <<<<<<< HEAD
 Obama wins!!! ...Change, yeaaah!
+wins!!! ...Change, yeaaah!
 =======
 #include <iostream>
 >>>>>>> 30cac5ea1e2e0f8d56dafd299a6f093a828c988b
