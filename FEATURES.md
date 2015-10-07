@@ -7,7 +7,7 @@ For now it works from the command line (all love the command line, right?),
 and you can control by passing some fancy commands and parameters to it.
 
 Something
-Let's see how it works!
+Let's see how it works if I edit this!
 
 To track your spendings and incomes, you use a wallet, which starts with an
 initial amount. Each spending and income is recorded in this wallet, and
