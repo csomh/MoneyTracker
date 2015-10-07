@@ -32,7 +32,7 @@ The wallet file looks like this:
 
 ```
 +1000.00 RON
-1444216713;+;200.00;salary advance;RON
+1444216713;+;200.00;"salary advance";RON
 1444218713;-;10.00;food;RON
 1444296713;-;200.00;travel;EUR
 ```
