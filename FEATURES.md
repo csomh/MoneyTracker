@@ -3,7 +3,7 @@
 MoneyTracker is an application which helps you keep an eye on your personal
 budget.
 
-For now works from the command line (all love the command line, right?),
+For now it works from the command line (all love the command line, right?),
 and you can control by passing some fancy commands and parameters to it.
 
 To track your spendings and incomes, you use a wallet, which starts with an
