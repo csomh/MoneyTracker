@@ -1,5 +1,4 @@
 # MoneyTracker
-## Subheading
 
 Code Example
 ============
