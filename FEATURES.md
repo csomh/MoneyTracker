@@ -6,6 +6,8 @@ budget.
 For now it works from the command line (all love the command line, right?),
 and you can control by passing some fancy commands and parameters to it.
 
+Something
+
 To track your spendings and incomes, you use a wallet, which starts with an
 initial amount. Each spending and income is recorded in this wallet, and
 one will be able to get some really smart aggregated data out of this, like:
