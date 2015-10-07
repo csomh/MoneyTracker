@@ -6,11 +6,8 @@ budget.
 For now it works from the command line (all love the command line, right?),
 and you can control by passing some fancy commands and parameters to it.
 
-<<<<<<< HEAD
 Something
-=======
-Let's see how it works! 
->>>>>>> c4f3a8761be37e2c4b3f10cdc3501a477abff7f7
+Let's see how it works!
 
 To track your spendings and incomes, you use a wallet, which starts with an
 initial amount. Each spending and income is recorded in this wallet, and
