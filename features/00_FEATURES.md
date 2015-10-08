@@ -40,7 +40,7 @@ The wallet file looks like this:
 The configuration file looks like this:
 
 ```
-wallet = my.wallet
+default_wallet = my.wallet
 default_currency = RON
 default_income_category = salary
 default_spending_category = other
