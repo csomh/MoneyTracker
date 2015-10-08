@@ -56,9 +56,14 @@ error: 12,24 is not a valid initial ammount.
 Creating wrongdec.wallet aborted.
 ```
 
-Creating wallet using initial value with leading zeros (should not work):
+Creating wallet using initial value with leading zeros:
 ```
 > moneytracker create leading0.wallet -00012.24
-error: -00012.24 is not a valid initial ammount.
-Creating leading0.wallet aborted.
+noinitial.wallet created with the initial amount of -12.24 RON
+```
+
+`create` without parameters triggers error:
+```
+> moneytracker create
+error: at least filename should be specified.
 ```
