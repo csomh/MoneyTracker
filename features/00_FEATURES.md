@@ -53,5 +53,5 @@ rate_EUR_USD = 1.13
 
 ## Feature list breakdown
 
-1. [Create wallet](/01_create_wallet.md)
-2. [Add income](/02_add_income.md)
+1. [Create wallet](/features/01_create_wallet.md)
+2. [Add income](/features/02_add_income.md)
