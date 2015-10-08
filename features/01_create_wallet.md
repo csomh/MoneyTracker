@@ -9,6 +9,10 @@ my.wallet created with the initial amount of +1000.00 RON
 
 This will create a file named `my.wallet` relative to where the command was
 called, with an initial amount of 1000 RON.
+```
++1000.00 RON
+
+```
 
 This command should not touch the configuration file (setting the default
 wallet is a separate command).
