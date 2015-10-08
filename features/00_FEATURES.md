@@ -6,10 +6,6 @@ budget.
 For now it works from the command line (all love the command line, right?),
 and you can control by passing some fancy commands and parameters to it.
 
-Let's see how it works!
-With this line. 
-
-
 To track your spendings and incomes, you use a wallet, which starts with an
 initial amount. Each spending and income is recorded in this wallet, and
 one will be able to get some really smart aggregated data out of this, like:
@@ -44,7 +40,7 @@ The wallet file looks like this:
 The configuration file looks like this:
 
 ```
-wallet = my.wallet
+default_wallet = my.wallet
 default_currency = RON
 default_income_category = salary
 default_spending_category = other
@@ -55,39 +51,7 @@ rate_USD_RON = 3.92
 rate_EUR_USD = 1.13
 ```
 
-Feature: Create wallet
-======================
+## Feature list breakdown
 
-One should be able to create a new wallet by calling:
-```
-> moneytracker create my.wallet 1000
-my.wallet created with the initial amount of +1000.00 RON
-```
-
-This will create a file named `my.wallet` relative to where the command was
-called, with an initial amount of 1000 RON.
-
-Other examples:
-```
-> moneytracker create other.wallet +200
-other.wallet created with the initial amount of +200.00 RON
-> moneytracker create yetother -1021.23
-yetother created with the initial amount of -1021.23 RON
-> moneytracker create yetother -1021.23
-error: wallet yetother already exists!
-> moneytracker create C:\learn\some.wallet 22
-C:\learn\some.wallet created with the initial amount of +22.00 RON
-```
-
-Feature: Add income to the wallet file
-======================================
-
-One should be able to add an income to the wallet file specified in the
-configuration file, by calling
-```
-> moneytracker income 200
-Income 'salary' in an amount of 200.00 RON
-```
-The time of the entry is always the current time (epoch timestamp).
-The currency of the entry is always RON.
-The category of the entry is always salary.
+1. [Create wallet](/features/01_create_wallet.md)
+2. [Add income](/features/02_add_income.md)
