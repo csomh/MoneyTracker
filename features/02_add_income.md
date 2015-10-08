@@ -41,7 +41,7 @@ Transaction time: Thu, 08 Oct 2015 10:52:40 GMT
 1444301560;+;123.12;salary;RON
 ```
 
-* * *
+---
 
 Only positive numbers are accepted:
 ```
@@ -53,7 +53,7 @@ error: income should be higher than 0.
 
 `my.wallet` is not changed.
 
-* * *
+---
 
 Only numbers should be accepted:
 ```
@@ -63,7 +63,7 @@ error: parameter for 'income' should be a positive number
 
 `my.wallet` is not changed.
 
-* * *
+---
 
 `income` should have a parameter:
 ```
@@ -73,7 +73,7 @@ error: no ammount specified for 'income'.
 
 `my.wallet` is not changed.
 
-* * *
+---
 
 Parameters after ammount are ignored:
 ```
@@ -90,7 +90,7 @@ Transaction time: Thu, 08 Oct 2015 10:52:45 GMT
 1444301565;+;212.00;salary;RON
 ```
 
-* * *
+---
 
 Error if opening of wallet failed (for any reason):
 ```
