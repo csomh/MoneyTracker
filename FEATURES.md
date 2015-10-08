@@ -9,6 +9,7 @@ and you can control by passing some fancy commands and parameters to it.
 Let's see how it works!
 With this line. 
 
+
 To track your spendings and incomes, you use a wallet, which starts with an
 initial amount. Each spending and income is recorded in this wallet, and
 one will be able to get some really smart aggregated data out of this, like:
@@ -35,7 +36,7 @@ The wallet file looks like this:
 
 ```
 +1000.00 RON
-1444216713;+;200.00;salary advance;RON
+1444216713;+;200.00;"salary advance";RON
 1444218713;-;10.00;food;RON
 1444296713;-;200.00;travel;EUR
 ```
