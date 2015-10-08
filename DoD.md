@@ -1,6 +1,6 @@
 # Definition of Done
 
-1. `moneytracker.exe` can be built calling `make moneytracker.exe` from the repo
+1. `moneytracker.exe` can be built calling `mingw32-make moneytracker.exe` from the repo
 root.
 2. Feature works as specified in the *Examples* and to the extent the team has
 commited.
