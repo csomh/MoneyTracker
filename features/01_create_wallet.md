@@ -51,14 +51,14 @@ noinitial.wallet created with the initial amount of +00.00 RON
 
 Creating wallet with incorrect decimal separator:
 ```
-> moneytracker create wrongdec.wallet 12*,*24
+> moneytracker create wrongdec.wallet 12,24
 error: 12,24 is not a valid initial ammount.
 Creating wrongdec.wallet aborted.
 ```
 
 Creating wallet using initial value with leading zeros (should not work):
 ```
-> moneytracker create leading0.wallet -00012,24
-error: -00012,24 is not a valid initial ammount.
+> moneytracker create leading0.wallet -00012.24
+error: -00012.24 is not a valid initial ammount.
 Creating leading0.wallet aborted.
 ```
