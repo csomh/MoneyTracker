@@ -59,7 +59,7 @@ Creating wrongdec.wallet aborted.
 Creating wallet using initial value with leading zeros:
 ```
 > moneytracker create leading0.wallet -00012.24
-noinitial.wallet created with the initial amount of -12.24 RON
+leading0.wallet created with the initial amount of -12.24 RON
 ```
 
 `create` without parameters triggers error:
