@@ -6,9 +6,10 @@ root.
 commited.
 3. Automated tests are in place covering each scenario from the *Examples*.
 4. Automated tests for components are in place.
-5. Tests for already implemented features are in place.
-6. DoD is checked on the master branch.
-7. Delivery should be tagged with v0.xx, where xx is the number of the feature
+5. Product and test code is according to the Coding Guidlines.
+6. Tests for already implemented features are in place.
+7. DoD is checked on the master branch.
+8. Delivery should be tagged with v0.xx, where xx is the number of the feature
 (ex: v0.01)
 
 Being in place means: compiles, runs and passes.
