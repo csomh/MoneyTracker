@@ -11,6 +11,7 @@ commited.
 7. DoD is checked on the master branch.
 8. Delivery should be tagged with v0.xx, where xx is the number of the feature
 (ex: v0.01)
+9. No warnings.
 
 Being in place means: compiles, runs and passes.
 

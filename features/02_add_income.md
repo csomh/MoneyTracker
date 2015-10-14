@@ -25,6 +25,10 @@ default_wallet = my.wallet
 - The currency of the entry is always `RON`.
 - The category of the entry is always `salary`.
 
+`moneytracker.config` is placed next to the application for now, its name does
+not change, and it is not moved to another path. (i.e. This is the default
+configuration file for the application.)
+
 Examples
 --------
 
@@ -96,4 +100,12 @@ Error if opening of wallet failed (for any reason):
 ```
 > moneytracker income 1000
 error: could not open 'some.wallet' to register transaction
+```
+
+---
+
+Error if opening of configuration file failed (for any reason)
+```
+> moneytracker income 1000
+error: could not open configuration 'moneytracker.config'
 ```
