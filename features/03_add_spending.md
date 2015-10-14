@@ -33,4 +33,4 @@ configuration file for the application.)
 Examples
 --------
 
-Examples for this functionality are analogous to the ones for [adding income](/02_add_income.md).
+Examples for this functionality are analogous to the ones for [adding income](/features/02_add_income.md).
