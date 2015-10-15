@@ -67,3 +67,9 @@ leading0.wallet created with the initial amount of -12.24 RON
 > moneytracker create
 error: at least filename should be specified.
 ```
+
+Creating wallet file fails:
+```
+> moneytracker create C:\path\not\existing\my.wallet 111
+error: could not create C:\path\not\existing\my.wallet
+```

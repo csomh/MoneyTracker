@@ -5,7 +5,7 @@ One should be able to add an income to the wallet file specified in the
 configuration file, by calling
 ```
 > moneytracker income 200
-Income 'salary' in an amount of +200.00 RON was registered.
+Income 'salary' in an amount of 200.00 RON was registered.
 Transaction time: Thu, 08 Oct 2015 10:52:35 GMT
 ```
 
@@ -35,7 +35,7 @@ Examples
 Add income with + sign and more than 2 digits:
 ```
 > moneytracker income +123.123
-Income 'salary' in an amount of +123.12 RON was registered.
+Income 'salary' in an amount of 123.12 RON was registered.
 Transaction time: Thu, 08 Oct 2015 10:52:40 GMT
 ```
 `my.wallet` is updated:
@@ -82,7 +82,7 @@ error: no ammount specified for 'income'.
 Parameters after ammount are ignored:
 ```
 > moneytracker income +212.00 145 -52 some words
-Income 'salary' in an amount of +212.00 RON was registered.
+Income 'salary' in an amount of 212.00 RON was registered.
 Transaction time: Thu, 08 Oct 2015 10:52:45 GMT
 ```
 
@@ -99,8 +99,10 @@ Transaction time: Thu, 08 Oct 2015 10:52:45 GMT
 Error if opening of wallet failed (for any reason):
 ```
 > moneytracker income 1000
-error: could not open 'some.wallet' to register transaction
+error: could not open 'C:\path\some.wallet' to register transaction
 ```
+
+If `default_wallet = C:\path\some.wallet`.
 
 ---
 
@@ -108,4 +110,29 @@ Error if opening of configuration file failed (for any reason)
 ```
 > moneytracker income 1000
 error: could not open configuration 'moneytracker.config'
+```
+
+### Content of configuration file
+
+There should be a line `default_wallet = file.name` in the configuration file.
+Whitespace characters should not be considered arround the `=` and at the end of the 
+line.
+Whitespace at the beginning of line should be ignored.
+Whitespace in path should not be considered right now.
+
+```
+default_wallet=my.wallet     
+default_wallet    =             my.wallet
+                    default_wallet=      my.wallet
+```
+
+### Multiple `default_wallet` variables in the config file
+
+First should be considered, i.e. reading of config file can be stopped after finding
+the first var.
+
+### Error in case var `default_wallet` is not found in the config file
+
+```
+error: no default wallet configured in 'moneytracker.config'
 ```

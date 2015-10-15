@@ -6,7 +6,7 @@ configuration file, by calling:
 
 ```
 > moneytracker spend 145.12
-Spending 'other' in an amount of +145.12 RON was registered.
+Spending 'other' in an amount of 145.12 RON was registered.
 Transaction time: Thu, 14 Oct 2015 10:52:35 GMT
 ```
 
