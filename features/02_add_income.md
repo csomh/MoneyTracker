@@ -114,10 +114,10 @@ error: could not open configuration 'moneytracker.config'
 
 ### Content of configuration file
 
-There should be a line `default_wallet = file.name` in the configuration file.
+There should be a line `default_wallet = file.name` in the configuration file.  
 Whitespace characters should not be considered arround the `=` and at the end of the 
-line.
-Whitespace at the beginning of line should be ignored.
+line.  
+Whitespace at the beginning of line should be ignored.  
 Whitespace in path should not be considered right now.
 
 ```
@@ -132,6 +132,8 @@ First should be considered, i.e. reading of config file can be stopped after fin
 the first var.
 
 ### Error in case var `default_wallet` is not found in the config file
+
+... or `default_wallet` has no value.
 
 ```
 error: no default wallet configured in 'moneytracker.config'
