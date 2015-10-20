@@ -2,3 +2,8 @@
 *.a
 *.exe
 !test_time.exe
+*.actual
+*.expected
+*.build
+*.diff
+*.wallet
