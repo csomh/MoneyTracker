@@ -1,3 +1,4 @@
 *.o
 *.a
 *.exe
+!test_time.exe
