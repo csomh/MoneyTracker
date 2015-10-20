@@ -56,3 +56,5 @@ rate_EUR_USD = 1.13
 1. [Create wallet](/features/01_create_wallet.md)
 2. [Add income](/features/02_add_income.md)
 3. [Add spending to default wallet file](/features/03_add_spending.md)
+3. [Print balance for default wallet](/features/04_print_balance.md)
+3. [Specify category for transaction](/features/05_specify_category.md)
