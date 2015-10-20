@@ -160,7 +160,7 @@ echo.
 (
 echo Example #6
 echo [TEST: output]
-echo error: 12,24 is not a valid initial ammount.
+echo error: 12,24 is not a valid initial amount.
 echo Creating wrongdec.wallet aborted.
 echo [TEST: file]
 echo The system cannot find the file specified.
