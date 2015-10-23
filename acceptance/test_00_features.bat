@@ -40,6 +40,14 @@ echo [RUN     ] 03_add_spending
 call test_03_add_spending.bat
 @echo off
 
+echo [RUN     ] 04_print_balance
+call test_04_print_balance.bat
+@echo off 
+
+echo [RUN     ] 05_specify_category
+call test_05_specify_category.bat
+@echo off 
+
 rem make sure echo is off
 @echo off
 echo ===========================================================================
