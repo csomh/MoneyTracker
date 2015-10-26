@@ -45,6 +45,8 @@ echo.
 ) >> %test_name%.expected 2>>&1
 
 rem ============================ TEST 1 ========================================
+timeout /T 2 /NOBREAK >nul 2>&1
+
 (
 echo Example #1
 echo [TEST: output]
@@ -69,6 +71,8 @@ echo.
 ) >> %test_name%.expected 2>>&1
 
 rem ============================ TEST 2 ========================================
+timeout /T 2 /NOBREAK >nul 2>&1
+
 (
 echo Example #2
 echo [TEST: output]
@@ -93,6 +97,8 @@ echo.
 ) >> %test_name%.expected 2>>&1
 
 rem ============================ TEST 3 ========================================
+timeout /T 2 /NOBREAK >nul 2>&1
+
 (
 echo Example #3
 echo [TEST: output]
@@ -117,6 +123,8 @@ echo.
 ) >> %test_name%.expected 2>>&1
 
 rem ============================ TEST 4 ========================================
+timeout /T 2 /NOBREAK >nul 2>&1
+
 (
 echo Example #4
 echo [TEST: output]
@@ -141,6 +149,8 @@ echo.
 ) >> %test_name%.expected 2>>&1
 
 rem ============================ TEST 5 ========================================
+timeout /T 2 /NOBREAK >nul 2>&1
+
 (
 echo Example #5
 echo [TEST: output]
@@ -291,6 +301,8 @@ echo.
 ) >> %test_name%.expected 2>>&1
 
 rem ============================ TEST 11 =======================================
+timeout /T 2 /NOBREAK >nul 2>&1
+
 (
 echo Example #11
 echo [TEST: output]
@@ -315,6 +327,8 @@ echo.
 ) >> %test_name%.expected 2>>&1
 
 rem ============================ TEST 12 =======================================
+timeout /T 2 /NOBREAK >nul 2>&1
+
 (
 echo Example #12
 echo [TEST: output]
@@ -339,6 +353,8 @@ echo.
 ) >> %test_name%.expected 2>>&1
 
 rem ============================ TEST 13 =======================================
+timeout /T 2 /NOBREAK >nul 2>&1
+
 (
 echo Example #13
 echo [TEST: output]
@@ -363,6 +379,8 @@ echo.
 ) >> %test_name%.expected 2>>&1
 
 rem ============================ TEST 14 =======================================
+timeout /T 2 /NOBREAK >nul 2>&1
+
 (
 echo Example #14
 echo [TEST: output]
@@ -387,6 +405,8 @@ echo.
 ) >> %test_name%.expected 2>>&1
 
 rem ============================ TEST 15 =======================================
+timeout /T 2 /NOBREAK >nul 2>&1
+
 (
 echo Example #15
 echo [TEST: output]

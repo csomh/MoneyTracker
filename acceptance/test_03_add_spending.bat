@@ -116,7 +116,7 @@ echo Example #3
 echo [TEST: output]
 echo error: parameter for 'spend' should be a positive number
 echo [TEST: output]
-echo error: no ammount specified for 'spend'.
+echo error: no amount specified for 'spend'.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
