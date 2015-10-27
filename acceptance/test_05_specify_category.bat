@@ -19,7 +19,7 @@ del %test_name%.expected > nul 2>&1
  echo +1000.00 RON
 ) > my.wallet.expected
 
-rem ============================ SPENDING / -c command ===========================
+rem ============================ INCOME / -c command ===========================
 rem ============================ TEST 0 ========================================
 (
 echo Example #0
@@ -217,7 +217,7 @@ echo.
 (
 echo Example #7
 echo [TEST: output]
-echo error: no ammount specified for 'income'.
+echo error: no amount specified for 'income'.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
@@ -267,7 +267,7 @@ echo.
 (
 echo Example #9
 echo [TEST: output]
-echo error: no ammount specified for 'income'.
+echo error: no amount specified for 'income'.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
@@ -473,7 +473,7 @@ echo.
 (
 echo Example #17
 echo [TEST: output]
-echo error: no ammount specified for 'spend'.
+echo error: no amount specified for 'spend'.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
@@ -523,7 +523,7 @@ echo.
 (
 echo Example #19
 echo [TEST: output]
-echo error: no ammount specified for 'spend'.
+echo error: no amount specified for 'spend'.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
