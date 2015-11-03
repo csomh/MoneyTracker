@@ -33,7 +33,7 @@ echo.
 (
 echo Example #0
 echo [TEST: output]
-echo Balance for my.wallet is +1000.00 RON
+echo Balance for 'my.wallet' is +1000.00 RON.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
@@ -60,7 +60,7 @@ echo.
 (
 echo Example #1
 echo [TEST: output]
-echo Balance for my.wallet is +0.00 RON
+echo Balance for 'my.wallet' is +0.00 RON.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
@@ -87,7 +87,7 @@ echo.
 (
 echo Example #2
 echo [TEST: output]
-echo Balance for my.wallet is -1000.00 RON
+echo Balance for 'my.wallet' is -1000.00 RON.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
@@ -122,7 +122,7 @@ echo.
 (
 echo Example #3
 echo [TEST: output]
-echo Balance for my.wallet is +73.03 RON
+echo Balance for 'my.wallet' is +73.03 RON.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
@@ -157,7 +157,7 @@ echo.
 (
 echo Example #4
 echo [TEST: output]
-echo Balance for my.wallet is +0.00 RON
+echo Balance for 'my.wallet' is +0.00 RON.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
@@ -192,7 +192,7 @@ echo.
 (
 echo Example #5
 echo [TEST: output]
-echo Balance for my.wallet is -223.44 RON
+echo Balance for 'my.wallet' is -223.44 RON.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
@@ -214,7 +214,7 @@ echo.
 (
 echo Example #6
 echo [TEST: output]
-echo Balance for my.wallet is -223.44 RON
+echo error: invalid parameters for 'balance'.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
@@ -237,7 +237,7 @@ echo.
 (
 echo Example #7
 echo [TEST: output]
-echo error: could not open configuration 'moneytracker.config'
+echo error: could not open configuration 'moneytracker.config'.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
@@ -265,7 +265,7 @@ echo.
 (
 echo Example #8
 echo [TEST: output]
-echo error: no default wallet configured in 'moneytracker.config'
+echo error: no default wallet configured in 'moneytracker.config'.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
@@ -289,7 +289,7 @@ echo.
 (
 echo Example #9
 echo [TEST: output]
-echo error: could not open 'C:\path\some.wallet' to calculate balance
+echo error: could not open 'C:\path\some.wallet' to calculate balance.
 echo [TEST: file]
 echo The system cannot find the path specified.
 type my.wallet.expected
@@ -318,7 +318,7 @@ echo.
 (
 echo Example #10
 echo [TEST: output]
-echo error: no default wallet configured in 'moneytracker.config'
+echo error: no default wallet configured in 'moneytracker.config'.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
@@ -365,7 +365,7 @@ echo.
 (
 echo Example #11
 echo [TEST: output]
-echo Balance for my2.wallet is -223.44 RON
+echo Balance for 'my2.wallet' is -223.44 RON.
 echo [TEST: file1]
 type my2.wallet.expected
 echo [TEST: file2]
@@ -376,7 +376,9 @@ echo.
 
 rem ============================ TEARDOWN ======================================
 del my.wallet >> %test_name%.actual 2>>&1
+del my2.wallet >> %test_name%.actual 2>>&1
 del my.wallet.expected >> %test_name%.actual 2>>&1
+del my2.wallet.expected >> %test_name%.actual 2>>&1
 del moneytracker.config >> %test_name%.actual 2>>&1
 
 rem this should have no output if everything works as expected

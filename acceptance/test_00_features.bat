@@ -48,6 +48,18 @@ echo [RUN     ] 05_specify_category
 call test_05_specify_category.bat
 @echo off 
 
+echo [RUN     ] 06_specify_wallet_trans
+call test_06_specify_wallet_trans.bat
+@echo off
+
+echo [RUN     ] 07_print_balance_category
+call test_07_print_balance_category.bat
+@echo off
+
+echo [RUN     ] 08_change_default_wallet
+call test_08_change_default_wallet.bat
+@echo off
+
 rem make sure echo is off
 @echo off
 echo ===========================================================================

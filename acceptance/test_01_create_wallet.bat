@@ -22,7 +22,7 @@ echo.
 (
 echo Example #0
 echo [TEST: output]
-echo my.wallet created with the initial amount of +1000.00 RON
+echo 'my.wallet' created with the initial amount of +1000.00 RON.
 echo [TEST: file]
 echo +1000.00 RON
 echo ... end ...
@@ -43,7 +43,7 @@ echo.
 (
 echo Example #1
 echo [TEST: output]
-echo other.wallet created with the initial amount of +200.00 RON
+echo 'other.wallet' created with the initial amount of +200.00 RON.
 echo [TEST: file]
 echo +200.00 RON
 echo ... end ...
@@ -64,7 +64,7 @@ echo.
 (
 echo Example #2
 echo [TEST: output]
-echo yetother created with the initial amount of -1021.23 RON
+echo 'yetother' created with the initial amount of -1021.23 RON.
 echo [TEST: file]
 echo -1021.23 RON
 echo ... end ...
@@ -85,7 +85,7 @@ echo.
 (
 echo Example #3
 echo [TEST: output]
-echo error: wallet yetother already exists!
+echo error: wallet 'yetother' already exists!
 echo [TEST: file]
 echo -1021.23 RON
 echo ... end ...
@@ -113,7 +113,7 @@ echo.
 (
 echo Example #4
 echo [TEST: output]
-echo C:\somedir\some.wallet created with the initial amount of +22.13 RON
+echo 'C:\somedir\some.wallet' created with the initial amount of +22.13 RON.
 echo [TEST: file]
 echo +22.13 RON
 echo ... end ...
@@ -139,7 +139,7 @@ echo.
 (
 echo Example #5
 echo [TEST: output]
-echo noinitial.wallet created with the initial amount of +00.00 RON
+echo 'noinitial.wallet' created with the initial amount of +00.00 RON.
 echo [TEST: file]
 echo +00.00 RON
 echo ... end ...
@@ -160,8 +160,8 @@ echo.
 (
 echo Example #6
 echo [TEST: output]
-echo error: 12,24 is not a valid initial amount.
-echo Creating wrongdec.wallet aborted.
+echo error: '12,24' is not a valid initial amount.
+echo Creating 'wrongdec.wallet' aborted.
 echo [TEST: file]
 echo The system cannot find the file specified.
 echo ... end ...
@@ -182,7 +182,7 @@ echo.
 (
 echo Example #7
 echo [TEST: output]
-echo leading0.wallet created with the initial amount of -12.24 RON
+echo 'leading0.wallet' created with the initial amount of -12.24 RON.
 echo [TEST: file]
 echo -12.24 RON
 echo ... end ...
@@ -220,7 +220,7 @@ echo.
 (
 echo Example #9
 echo [TEST: output]
-echo error: could not create C:\path\not\existing\my.wallet
+echo error: could not create 'C:\path\not\existing\my.wallet'.
 echo [TEST: file]
 echo The system cannot find the path specified.
 echo ... end ...

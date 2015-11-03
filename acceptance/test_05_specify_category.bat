@@ -36,7 +36,7 @@ test_time.exe ";+;200.00;scholarship;RON" >> my.wallet.expected
 (
 echo Example #0
 echo [TEST: output]
-echo Income 'scholarship' in an amount of 200.00 RON was registered.
+echo Income 'scholarship' in an amount of 200.00 RON was registered to 'my.wallet'.
 test_time.exe --gmt
 echo [TEST: file]
 type my.wallet.expected
@@ -62,7 +62,7 @@ test_time.exe ";+;200.00;scholarship;RON" >> my.wallet.expected
 (
 echo Example #1
 echo [TEST: output]
-echo Income 'scholarship' in an amount of 200.00 RON was registered.
+echo Income 'scholarship' in an amount of 200.00 RON was registered to 'my.wallet'.
 test_time.exe --gmt
 echo [TEST: file]
 type my.wallet.expected
@@ -83,13 +83,10 @@ echo ... end ...
 echo.
 ) >> %test_name%.actual 2>>&1
 
-test_time.exe ";+;200.00;salary;RON" >> my.wallet.expected
-
 (
 echo Example #2
 echo [TEST: output]
-echo Income 'salary' in an amount of 200.00 RON was registered.
-test_time.exe --gmt
+echo error: invalid parameters for 'income'.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
@@ -114,7 +111,7 @@ test_time.exe ";+;200.00;scholarship;RON" >> my.wallet.expected
 (
 echo Example #3
 echo [TEST: output]
-echo Income 'scholarship' in an amount of 200.00 RON was registered.
+echo Income 'scholarship' in an amount of 200.00 RON was registered to 'my.wallet'.
 test_time.exe --gmt
 echo [TEST: file]
 type my.wallet.expected
@@ -140,7 +137,7 @@ test_time.exe ";+;200.00;scholarship;RON" >> my.wallet.expected
 (
 echo Example #4
 echo [TEST: output]
-echo Income 'scholarship' in an amount of 200.00 RON was registered.
+echo Income 'scholarship' in an amount of 200.00 RON was registered to 'my.wallet'.
 test_time.exe --gmt
 echo [TEST: file]
 type my.wallet.expected
@@ -161,13 +158,10 @@ echo ... end ...
 echo.
 ) >> %test_name%.actual 2>>&1
 
-test_time.exe ";+;200.00;salary;RON" >> my.wallet.expected
-
 (
 echo Example #5
 echo [TEST: output]
-echo Income 'salary' in an amount of 200.00 RON was registered.
-test_time.exe --gmt
+echo error: invalid parameters for 'income'.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
@@ -192,11 +186,11 @@ echo.
 (
 echo Example #6
 echo [TEST: output]
-echo error: parameter for 'income' should be a positive number
+echo error: invalid parameters for 'income'.
 echo [TEST: output]
-echo error: parameter for 'income' should be a positive number
+echo error: invalid parameters for 'income'.
 echo [TEST: output]
-echo error: parameter for 'income' should be a positive number
+echo error: invalid parameters for 'income'.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
@@ -217,7 +211,7 @@ echo.
 (
 echo Example #7
 echo [TEST: output]
-echo error: no amount specified for 'income'.
+echo error: invalid parameters for 'income'.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
@@ -242,11 +236,11 @@ echo.
 (
 echo Example #8
 echo [TEST: output]
-echo error: parameter for 'income' should be a positive number
+echo error: invalid parameters for 'income'.
 echo [TEST: output]
-echo error: parameter for 'income' should be a positive number
+echo error: invalid parameters for 'income'.
 echo [TEST: output]
-echo error: parameter for 'income' should be a positive number
+echo error: invalid parameters for 'income'.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
@@ -267,7 +261,7 @@ echo.
 (
 echo Example #9
 echo [TEST: output]
-echo error: no amount specified for 'income'.
+echo error: invalid parameters for 'income'.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
@@ -292,7 +286,7 @@ test_time.exe ";-;200.00;scholarship;RON" >> my.wallet.expected
 (
 echo Example #10
 echo [TEST: output]
-echo Spending 'scholarship' in an amount of 200.00 RON was registered.
+echo Spending 'scholarship' in an amount of 200.00 RON was registered to 'my.wallet'.
 test_time.exe --gmt
 echo [TEST: file]
 type my.wallet.expected
@@ -318,7 +312,7 @@ test_time.exe ";-;200.00;scholarship;RON" >> my.wallet.expected
 (
 echo Example #11
 echo [TEST: output]
-echo Spending 'scholarship' in an amount of 200.00 RON was registered.
+echo Spending 'scholarship' in an amount of 200.00 RON was registered to 'my.wallet'.
 test_time.exe --gmt
 echo [TEST: file]
 type my.wallet.expected
@@ -339,13 +333,10 @@ echo ... end ...
 echo.
 ) >> %test_name%.actual 2>>&1
 
-test_time.exe ";-;200.00;other;RON" >> my.wallet.expected
-
 (
 echo Example #12
 echo [TEST: output]
-echo Spending 'other' in an amount of 200.00 RON was registered.
-test_time.exe --gmt
+echo error: invalid parameters for 'spend'.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
@@ -370,7 +361,7 @@ test_time.exe ";-;200.00;scholarship;RON" >> my.wallet.expected
 (
 echo Example #13
 echo [TEST: output]
-echo Spending 'scholarship' in an amount of 200.00 RON was registered.
+echo Spending 'scholarship' in an amount of 200.00 RON was registered to 'my.wallet'.
 test_time.exe --gmt
 echo [TEST: file]
 type my.wallet.expected
@@ -396,7 +387,7 @@ test_time.exe ";-;200.00;scholarship;RON" >> my.wallet.expected
 (
 echo Example #14
 echo [TEST: output]
-echo Spending 'scholarship' in an amount of 200.00 RON was registered.
+echo Spending 'scholarship' in an amount of 200.00 RON was registered to 'my.wallet'.
 test_time.exe --gmt
 echo [TEST: file]
 type my.wallet.expected
@@ -417,13 +408,10 @@ echo ... end ...
 echo.
 ) >> %test_name%.actual 2>>&1
 
-test_time.exe ";-;200.00;other;RON" >> my.wallet.expected
-
 (
 echo Example #15
 echo [TEST: output]
-echo Spending 'other' in an amount of 200.00 RON was registered.
-test_time.exe --gmt
+echo error: invalid parameters for 'spend'.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
@@ -448,11 +436,11 @@ echo.
 (
 echo Example #16
 echo [TEST: output]
-echo error: parameter for 'spend' should be a positive number
+echo error: invalid parameters for 'spend'.
 echo [TEST: output]
-echo error: parameter for 'spend' should be a positive number
+echo error: invalid parameters for 'spend'.
 echo [TEST: output]
-echo error: parameter for 'spend' should be a positive number
+echo error: invalid parameters for 'spend'.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
@@ -473,7 +461,7 @@ echo.
 (
 echo Example #17
 echo [TEST: output]
-echo error: no amount specified for 'spend'.
+echo error: invalid parameters for 'spend'.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
@@ -498,11 +486,11 @@ echo.
 (
 echo Example #18
 echo [TEST: output]
-echo error: parameter for 'spend' should be a positive number
+echo error: invalid parameters for 'spend'.
 echo [TEST: output]
-echo error: parameter for 'spend' should be a positive number
+echo error: invalid parameters for 'spend'.
 echo [TEST: output]
-echo error: parameter for 'spend' should be a positive number
+echo error: invalid parameters for 'spend'.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
@@ -523,7 +511,7 @@ echo.
 (
 echo Example #19
 echo [TEST: output]
-echo error: no amount specified for 'spend'.
+echo error: invalid parameters for 'spend'.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
