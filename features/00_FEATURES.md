@@ -61,3 +61,6 @@ rate_EUR_USD = 1.13
 6. [Specify wallet for transaction](/features/06_specify_wallet_for_transaction.md)
 7. [Print balance for default wallet](/features/07_balance_for_category.md)
 8. [Change default wallet in configuration](/features/08_change_default_wallet.md)
+9. [Change default categories for transactions](/features/09_change_def_trans_cat.md)
+10. [Specify wallet when printing balance](/features/10_wallet_for_balance.md)
+11. [Specify time for transaction](/features/11_time_for_transaction.md)
