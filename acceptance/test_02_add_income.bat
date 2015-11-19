@@ -9,6 +9,7 @@ del %test_name%.actual > nul 2>&1
 rem clean log file for expected results
 del %test_name%.expected > nul 2>&1
 
+
 (
  echo default_wallet = my.wallet
 ) > moneytracker.config
@@ -138,7 +139,7 @@ echo.
 ) >> %test_name%.expected 2>>&1
 
 rem ============================ TEST 5 ========================================
-echo default_wallet = C:\path\some.wallet > moneytracker.config
+echo default_wallet = C:\path\some.wallet> moneytracker.config
 
 (
 echo Example #5
