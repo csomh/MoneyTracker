@@ -190,7 +190,7 @@ rem ============================ TEST 7 ========================================
 (
 echo.
 echo
-echo default_wallet =
+echo default_wallet = 
 echo some_other = value
 ) > moneytracker.config
 

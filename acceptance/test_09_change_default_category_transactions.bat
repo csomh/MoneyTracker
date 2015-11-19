@@ -20,7 +20,7 @@ rem ============================ TEST 0 ========================================
 (
  echo Example #0
 echo [TEST: output]
-moneytracker config default_wallet=asaceva.wallet
+moneytracker config default_wallet = asaceva.wallet
 echo [TEST: file]
 type moneytracker.config
 echo ... end ...
@@ -45,8 +45,8 @@ echo.
 
 rem ============================ TEARDOWN ======================================
 
-del moneytracker.config >> %test_name%.actual 2>>&1
-del moneytracker.config.expected >> %test_name%.actual 2>>&1
+rem del moneytracker.config >> %test_name%.actual 2>>&1
+rem del moneytracker.config.expected >> %test_name%.actual 2>>&1
 
 rem this should have no output if everything works as expected
 rem use diff unified format, and redirect output for later use
