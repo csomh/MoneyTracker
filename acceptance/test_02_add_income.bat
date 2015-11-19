@@ -46,7 +46,7 @@ echo.
 ) >> %test_name%.expected 2>>&1
 
 rem ============================ TEST 1 ========================================
-timeout /T 2 /NOBREAK >nul 2>&1
+timeout /T 1 /NOBREAK >nul 2>&1
 
 (
 echo Example #1
@@ -114,7 +114,7 @@ echo.
 ) >> %test_name%.expected 2>>&1
 
 rem ============================ TEST 4 ========================================
-timeout /T 2 /NOBREAK >nul 2>&1
+timeout /T 1 /NOBREAK >nul 2>&1
 
 (
 echo Example #4
@@ -138,7 +138,7 @@ echo.
 ) >> %test_name%.expected 2>>&1
 
 rem ============================ TEST 5 ========================================
-echo default_wallet         =C:\path\some.wallet        > moneytracker.config
+echo default_wallet = C:\path\some.wallet > moneytracker.config
 
 (
 echo Example #5
@@ -188,9 +188,9 @@ echo.
 rem ============================ TEST 7 ========================================
 (
 echo.
-echo 
-echo default_wallet     =                       
-echo some_other=value
+echo
+echo default_wallet =
+echo some_other = value
 ) > moneytracker.config
 
 (
@@ -216,9 +216,9 @@ echo.
 rem ============================ TEST 8 ========================================
 (
 echo.
-echo 
-echo defualt_wallet=my.wallet                       
-echo some_other=value
+echo
+echo defualt_wallet = my.wallet
+echo some_other = value
 ) > moneytracker.config
 
 (
@@ -242,16 +242,16 @@ echo.
 ) >> %test_name%.expected 2>>&1
 
 rem ============================ TEST 9 ========================================
-timeout /T 2 /NOBREAK >nul 2>&1
+timeout /T 1 /NOBREAK >nul 2>&1
 echo +200.00 RON > my2.wallet
 echo +200.00 RON > my2.wallet.expected
 
 (
 echo.
-echo 
-echo default_wallet=my2.wallet                       
-echo default_wallet = my.wallet                       
-echo some_other=value
+echo
+echo default_wallet = my2.wallet
+echo default_wallet = my.wallet
+echo some_other = value
 ) > moneytracker.config
 
 (
@@ -300,4 +300,3 @@ if %errorlevel% EQU 1 (
 
 @echo on
 @exit /b
-
