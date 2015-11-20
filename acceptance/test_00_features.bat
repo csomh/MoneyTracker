@@ -65,6 +65,10 @@ echo [RUN     ] 09_change_default_category_transactions
 call test_09_change_default_category_transactions.bat
 @echo off
 
+echo [RUN     ] 10_specify_wallet_balance
+call test_10_specify_wallet_balance.bat
+@echo off
+
 rem make sure echo is off
 @echo off
 echo ===========================================================================
