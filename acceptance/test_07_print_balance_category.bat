@@ -185,8 +185,8 @@ rem ============================ TEST 6 ========================================
 (
 echo.
 echo
-echo default_wallet     =                       
-echo some_other=my.wallet
+echo default_wallet = 
+echo some_other = my.wallet
 ) > moneytracker.config
 
 (
@@ -211,7 +211,7 @@ echo.
 
 
 rem ============================ TEST 7 ========================================
-echo default_wallet         =C:\path\some.wallet        > moneytracker.config
+echo default_wallet = C:\path\some.wallet> moneytracker.config
 
 (
 echo Example #7
@@ -237,8 +237,8 @@ echo.
 
 rem ============================ TEST 8 ========================================
 (
-echo default_wallet_ =my.wallet                       
-echo some_other=value
+echo default_wallet_ = my.wallet
+echo some_other = value
 ) > moneytracker.config
 
 (
@@ -281,9 +281,9 @@ echo 1445315555;-;223.44;clothes;RON
 (
 echo.
 echo 
-echo default_wallet=my2.wallet                       
-echo default_wallet = my.wallet                       
-echo some_other=value
+echo default_wallet = my2.wallet
+echo default_wallet = my.wallet
+echo some_other = value
 ) > moneytracker.config
 
 (

@@ -37,29 +37,29 @@ echo [RUN     ] 02_add_income
 call test_02_add_income.bat
 @echo off
 
-rem echo [RUN     ] 03_add_spending
-rem call test_03_add_spending.bat
-rem @echo off
+echo [RUN     ] 03_add_spending
+call test_03_add_spending.bat
+@echo off
 
-rem echo [RUN     ] 04_print_balance
-rem call test_04_print_balance.bat
-rem @echo off
+echo [RUN     ] 04_print_balance
+call test_04_print_balance.bat
+@echo off
 
-rem echo [RUN     ] 05_specify_category
-rem call test_05_specify_category.bat
-rem @echo off
+echo [RUN     ] 05_specify_category
+call test_05_specify_category.bat
+@echo off
 
-rem echo [RUN     ] 06_specify_wallet_trans
-rem call test_06_specify_wallet_trans.bat
-rem @echo off
+echo [RUN     ] 06_specify_wallet_trans
+call test_06_specify_wallet_trans.bat
+@echo off
 
-rem echo [RUN     ] 07_print_balance_category
-rem call test_07_print_balance_category.bat
-rem @echo off
+echo [RUN     ] 07_print_balance_category
+call test_07_print_balance_category.bat
+@echo off
 
-rem echo [RUN     ] 08_change_default_wallet
-rem call test_08_change_default_wallet.bat
-rem @echo off
+echo [RUN     ] 08_change_default_wallet
+call test_08_change_default_wallet.bat
+@echo off
 
 echo [RUN     ] 09_change_default_category_transactions
 call test_09_change_default_category_transactions.bat
