@@ -89,8 +89,8 @@ echo.
 
 (
 echo default_wallet = my.wallet
-echo default_income_category =
-echo default_spending_category =
+echo default_income_category = 
+echo default_spending_category = 
 ) > moneytracker.config.expected
 
 (
@@ -308,37 +308,125 @@ echo ... end ...
 echo.
 ) >> %test_name%.expected 2>>&1
 
-rem ============================ TEST 9 ========================================
+rem ============================ TEST 9 =======================================
+timeout /T 2 /NOBREAK >nul 2>&1
 (
-echo default_wallet = my.wallet
-echo default_income_category = salary
-echo default_spending_category = other
-) > moneytracker.config
+echo +100.00 RON
+) > my.wallet
+
+(
+echo +100.00 RON
+) > my.wallet.expected
 
 (
 echo Example #9
 echo [TEST: output]
-moneytracker config default_income_category = really big "income category" yes
-moneytracker config default_spending_category = really big "spend category" no
+moneytracker income --category "really big income category" +200
+moneytracker spend +200 -c "really big spend category"
 echo [TEST: file]
-type moneytracker.config
+type my.wallet
 echo ... end ...
 echo.
 ) >> %test_name%.actual 2>>&1
 
-(
-echo default_wallet = my.wallet
-echo default_income_category = salary
-echo default_spending_category = other
-) > moneytracker.config.expected
+test_time.exe ";+;200.00;really big income category;RON" >> my.wallet.expected
+test_time.exe ";-;200.00;really big spend category;RON" >> my.wallet.expected
 
 (
 echo Example #9
 echo [TEST: output]
-echo error: invalid parameters for 'config'.
-echo error: invalid parameters for 'config'.
+echo Income 'really big income category' in an amount of 200.00 RON was registered to 'my.wallet'.
+test_time.exe --gmt
+echo Spending 'really big spend category' in an amount of 200.00 RON was registered to 'my.wallet'.
+test_time.exe --gmt
 echo [TEST: file]
-type moneytracker.config.expected
+type my.wallet.expected
+echo ... end ...
+echo.
+) >> %test_name%.expected 2>>&1
+
+rem ============================ TEST 10 =======================================
+timeout /T 2 /NOBREAK >nul 2>&1
+(
+echo +100.00 RON
+) > my.wallet
+
+(
+echo +100.00 RON
+) > my.wallet.expected
+
+(
+echo default_wallet = my.wallet
+echo default_income_category = config big income category
+echo default_spending_category = config big spend category
+) > moneytracker.config
+
+(
+echo Example #10
+echo [TEST: output]
+moneytracker income +200
+moneytracker spend +100
+echo [TEST: file]
+type my.wallet
+echo ... end ...
+echo.
+) >> %test_name%.actual 2>>&1
+
+test_time.exe ";+;200.00;config big income category;RON" >> my.wallet.expected
+test_time.exe ";-;100.00;config big spend category;RON" >> my.wallet.expected
+
+(
+echo Example #10
+echo [TEST: output]
+echo Income 'config big income category' in an amount of 200.00 RON was registered to 'my.wallet'.
+test_time.exe --gmt
+echo Spending 'config big spend category' in an amount of 100.00 RON was registered to 'my.wallet'.
+test_time.exe --gmt
+echo [TEST: file]
+type my.wallet.expected
+echo ... end ...
+echo.
+) >> %test_name%.expected 2>>&1
+
+rem ============================ TEST 11 =======================================
+timeout /T 2 /NOBREAK >nul 2>&1
+(
+echo +100.00 RON
+) > my.wallet
+
+(
+echo +100.00 RON
+) > my.wallet.expected
+
+(
+echo default_wallet = my.wallet
+echo default_income_category =
+echo default_spending_category =
+) > moneytracker.config
+
+(
+echo Example #11
+echo [TEST: output]
+moneytracker income +200
+moneytracker spend +100
+echo [TEST: file]
+type my.wallet
+echo ... end ...
+echo.
+) >> %test_name%.actual 2>>&1
+
+test_time.exe ";+;200.00;salary;RON" >> my.wallet.expected
+test_time.exe ";-;100.00;other;RON" >> my.wallet.expected
+
+(
+echo Example #11
+echo [TEST: output]
+echo Income 'salary' in an amount of 200.00 RON was registered to 'my.wallet'.
+test_time.exe --gmt
+echo Spending 'other' in an amount of 100.00 RON was registered to 'my.wallet'.
+test_time.exe --gmt
+echo [TEST: file]
+type my.wallet.expected
 echo ... end ...
 echo.
 ) >> %test_name%.expected 2>>&1
