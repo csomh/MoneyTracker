@@ -9,6 +9,8 @@ del %test_name%.expected > nul 2>&1
 
 (
 echo default_wallet = my.wallet
+echo default_income_category =
+echo default_spend_category =
 ) > moneytracker.config
 
 (
@@ -17,10 +19,15 @@ echo default_wallet = my.wallet
 
 
 rem ============================ TEST 0 ========================================
+rem SET location = "big s"
+echo on
+echo %location%
+echo off
 (
- echo Example #0
+echo Example #0
 echo [TEST: output]
-moneytracker config default_wallet = asaceva.wallet
+moneytracker config default_income_category = ""big s""
+moneytracker config default_spend_category = big
 echo [TEST: file]
 type moneytracker.config
 echo ... end ...
@@ -28,13 +35,15 @@ echo.
 ) >> %test_name%.actual 2>>&1
 
 (
-echo default_wallet = asaceva.wallet
-) > moneytracker.config.expected
+echo default_income_category = big
+echo default_spend_category = big
+) >> moneytracker.config.expected
 
 (
 echo Example #0
 echo [TEST: output]
-echo 'asaceva.wallet' was configured as default.
+echo 'big' was configured as default.
+echo 'big' was configured as default.
 echo [TEST: file]
 type moneytracker.config.expected
 echo ... end ...

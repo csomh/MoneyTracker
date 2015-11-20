@@ -29,9 +29,9 @@ if not exist test_time.exe goto :no_timer
 rem call tests
 echo ===========================================================================
 
-rem echo [RUN     ] 01_create_wallet
-rem call test_01_create_wallet.bat
-rem @echo off
+echo [RUN     ] 01_create_wallet
+call test_01_create_wallet.bat
+@echo off
 
 echo [RUN     ] 02_add_income
 call test_02_add_income.bat
