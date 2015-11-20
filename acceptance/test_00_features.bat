@@ -33,9 +33,9 @@ rem echo [RUN     ] 01_create_wallet
 rem call test_01_create_wallet.bat
 rem @echo off
 
-echo [RUN     ] 02_add_income
-call test_02_add_income.bat
-@echo off
+rem echo [RUN     ] 02_add_income
+rem call test_02_add_income.bat
+rem @echo off
 
 rem echo [RUN     ] 03_add_spending
 rem call test_03_add_spending.bat
