@@ -334,7 +334,7 @@ echo.
 (
 echo Example #13
 echo [TEST: output]
-echo No transaction with category 'prune' is registered in 'my.wallet'.
+echo error: invalid parameters for 'balance'.
 echo [TEST: file]
 type my.wallet.expected
 echo ... end ...
