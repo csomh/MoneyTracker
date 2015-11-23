@@ -352,6 +352,7 @@ echo Example #10
 echo [TEST: output]
 moneytracker spend     --time "28-11-201526:15"    +500
 echo [TEST: file]
+type my.wallet
 echo ... end ...
 echo.
 ) >> %test_name%.actual 2>>&1
@@ -368,7 +369,8 @@ echo.
 
 
 rem ============================ TEARDOWN ======================================
-
+del my.wallet >> %test_name%.actual 2>>&1
+del my.wallet.expected >> %test_name%.actual 2>>&1
 rem del moneytracker.config >> %test_name%.actual 2>>&1
 rem del moneytracker.config.expected >> %test_name%.actual 2>>&1
 
