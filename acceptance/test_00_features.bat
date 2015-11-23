@@ -69,6 +69,10 @@ echo [RUN     ] 10_specify_wallet_balance
 call test_10_specify_wallet_balance.bat
 @echo off
 
+echo [RUN     ] 11_specify_time_for_transaction
+call test_11_specify_time_for_transaction.bat
+@echo off
+
 rem make sure echo is off
 @echo off
 echo ===========================================================================
