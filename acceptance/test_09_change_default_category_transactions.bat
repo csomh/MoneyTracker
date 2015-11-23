@@ -433,8 +433,8 @@ echo.
 
 rem ============================ TEARDOWN ======================================
 
-rem del moneytracker.config >> %test_name%.actual 2>>&1
-rem del moneytracker.config.expected >> %test_name%.actual 2>>&1
+del moneytracker.config >> %test_name%.actual 2>>&1
+del moneytracker.config.expected >> %test_name%.actual 2>>&1
 
 rem this should have no output if everything works as expected
 rem use diff unified format, and redirect output for later use
