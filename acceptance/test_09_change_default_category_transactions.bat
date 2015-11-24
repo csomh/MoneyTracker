@@ -400,8 +400,8 @@ echo +100.00 RON
 
 (
 echo default_wallet = my.wallet
-echo default_income_category =
-echo default_spending_category =
+echo default_income_category = 
+echo default_spending_category = 
 ) > moneytracker.config
 
 (
